@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { 
   Container, 
 } from './styles';
@@ -7,7 +5,7 @@ import {
 export default function Presentation (){
  return (
    <Container> 
-    
+
    </Container>
  )
 }

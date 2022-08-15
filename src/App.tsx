@@ -1,17 +1,18 @@
 //React
 import React from 'react';
-import Presentation from './components/Presentation';
 
 //Styles
 import './styles.css';
 
 //Components
+import Presentation from './components/Presentation';
+import AppContainer from './components/AppContainer';
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
+    <AppContainer>
+      <Presentation />
+    </AppContainer>
   );
 }
 
