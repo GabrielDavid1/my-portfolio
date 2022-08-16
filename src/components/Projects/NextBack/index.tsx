@@ -1,13 +1,26 @@
 import { Container } from "./styles";
 
 interface Props {
-  param: string;
+  param:string;
+  index:number;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
+  length:number;
 }
 
-export default function NextBack({ param }: Props) {
+export default function NextBack({ param, index, setIndex, length }: Props) {
+  
+  function moveIndex () {
+    const limit = length - 1;
+    if (param === "next") {
+        (index < limit) && setIndex(index + 1);
+    } else {
+        (index > 0) && setIndex(index - 1);
+    }
+  }
+
   if (param === "next") {
     return (
-      <Container>
+      <Container onClick={moveIndex}>
         <svg
           width="48px"
           height="48px"
@@ -28,7 +41,7 @@ export default function NextBack({ param }: Props) {
     );
   } else {
     return (
-      <Container>
+      <Container onClick={moveIndex}>
         <svg
           width="50px"
           height="50px"
