@@ -38,7 +38,6 @@ export const ProfileImage = styled.img`
 export const ListArea = styled.div`
     width: 100%;
     height: 100%;
-    padding: 10% 0px;
 `;
 
 export const ListField = styled.div`
@@ -59,4 +58,5 @@ export const ListElement = styled.a`
     &:hover {
         color:#e4ab07;
     }
+    text-decoration: none;
 `;

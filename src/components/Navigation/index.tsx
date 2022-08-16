@@ -22,9 +22,9 @@ export default function Navigation (){
      <SubTitle> FullStack Developer </SubTitle>
      <ListArea>
         <ListField>
-          <ListElement> Initial </ListElement>
-          <ListElement> Technologies </ListElement>
-          <ListElement> Projects </ListElement>
+          <ListElement href="#presentation"> Initial </ListElement>
+          <ListElement href="#technologies"> Technologies </ListElement>
+          <ListElement href="#projects"> Projects </ListElement>
           <ListElement> Contacts </ListElement>
           <ListElement> Languages </ListElement>
         </ListField>

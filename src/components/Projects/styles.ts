@@ -11,10 +11,37 @@ export const Container = styled.div`
 
 export const Body = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 50%;
     height: 50%;
-    background-color:green;
+`;
+
+export const Title = styled.h1`
+    color: #2f2f2f;
+    font-family: 'Bitter';
+`;
+
+export const Details = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+`;
+
+export const Image = styled.img`
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0px 0px 0px 2px;
+`;
+
+export const Link = styled.a`
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
 `;

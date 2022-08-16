@@ -40,7 +40,7 @@ export default function Technologies () {
  }
 
  return (
-   <Container> 
+   <Container id="technologies"> 
       <Title>Technologies</Title>
       <TecnologiesArea>
         <TabElement isActive={status.frontEnd} onClick={() => handleClick('frontEnd')}> Front-End  </TabElement>
