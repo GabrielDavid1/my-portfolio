@@ -5,15 +5,15 @@ import React from 'react';
 import './styles.css';
 
 //Components
-import Presentation from './components/Presentation';
 import AppContainer from './components/AppContainer';
 import Navigation from './components/Navigation';
+import Technologies from './components/Technologies';
 
 function App() {
   return (
     <AppContainer>
       <Navigation />
-      <Presentation />
+      <Technologies />
     </AppContainer>
   );
 }
