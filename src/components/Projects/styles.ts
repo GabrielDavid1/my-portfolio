@@ -21,6 +21,7 @@ export const Body = styled.div`
 export const Title = styled.h1`
     color: #2f2f2f;
     font-family: 'Bitter';
+    padding: 0px 20%;
 `;
 
 export const Details = styled.div`

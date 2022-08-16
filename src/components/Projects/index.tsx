@@ -6,45 +6,57 @@ import Github from "./Icons/Github";
 import Website from "./Icons/Website";
 import NextBack from "./NextBack";
 
+//utils
+import myProjects from "../../utils/myProjects";
+
 import { Body, Title, Container, Details, Image, Link } from "./styles";
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
-
-  const Renderer = () => {
-    return (
-      <>
-        <Title> Projeto X - Back-End / Front-End </Title>
-        <Body>
-          <NextBack param="back" index={index} setIndex={setIndex} length={10} />
-          <Image
-            src="https://raw.githubusercontent.com/GabrielDavid1/ProjetoCMS/main/public/imagemdosistema.png"
-            alt=""
-          />
-          <NextBack param="next" index={index} setIndex={setIndex} length={10} />
-        </Body>
-        <br />
-        <Details>
+  return (
+    <Container id="projects">
+      <Title>
+        {" "}
+        {myProjects[index].title} - {myProjects[index].type}{" "}
+      </Title>
+      <Body>
+        <NextBack
+          param="back"
+          index={index}
+          setIndex={setIndex}
+          length={myProjects.length}
+        />
+        <Image src={myProjects[index].img} alt={myProjects[index].title} />
+        <NextBack
+          param="next"
+          index={index}
+          setIndex={setIndex}
+          length={myProjects.length}
+        />
+      </Body>
+      <br />
+      <Details>
+        {myProjects[index].urlWebsite && (
           <Link
-            href="https://projetocms-gabrieldavid75315-gmailcom.vercel.app"
+            href={myProjects[index].urlWebsite}
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
             <Website />{" "}
           </Link>
+        )}
+        {myProjects[index].urlGithub && (
           <Link
-            href="https://github.com/GabrielDavid1/ProjetoCMS"
+            href={myProjects[index].urlGithub}
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
             <Github />{" "}
           </Link>
-        </Details>
-      </>
-    );
-  };
-
-  return <Container id="projects">{Renderer()}</Container>;
+        )}
+      </Details>
+    </Container>
+  );
 }

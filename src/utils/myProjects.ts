@@ -1,0 +1,73 @@
+export default [
+    {
+        title: 'Projeto CMS',
+        img: 'https://raw.githubusercontent.com/GabrielDavid1/ProjetoCMS/main/public/imagemdosistema.png',
+        type: 'Front-End',
+        urlWebsite: 'https://projetocms-gabrieldavid75315-gmailcom.vercel.app',
+        urlGithub: 'https://github.com/GabrielDavid1/ProjetoCMS',
+    },
+    {
+        title: 'Crud in VueJS with a FakeAPI',
+        img: 'https://user-images.githubusercontent.com/87146770/160649168-cbd79a40-0e9c-44b5-badd-74650dfea8ac.png',
+        type: 'Front-End',
+        urlGithub: 'https://github.com/GabrielDavid1/CrudVueJS-FakeAPI',
+    },
+    {
+        title: 'GdMoney',
+        img: 'https://github.com/GabrielDavid1/GdMoney/blob/main/public/assets/img/screenshot.png?raw=true',
+        type: 'Front-End',
+        urlWebsite: 'https://gd-money.vercel.app',
+        urlGithub: 'https://github.com/GabrielDavid1/GdMoney',
+    },
+    {
+        title: 'GdMoney API',
+        img: 'https://thumbs.dreamstime.com/b/cryptocurrency-coin-bitcoin-arrow-chart-falling-doodle-style-isolated-217812860.jpg',
+        type: 'Back-End',
+        urlGithub: 'https://github.com/GabrielDavid1/GdMoney-API',
+    },
+    {
+        title: 'GDManagement',
+        img: 'https://github.com/GabrielDavid1/GDManagement/blob/main/print.png?raw=true',
+        type: 'Mobile',
+        urlGithub: 'https://github.com/GabrielDavid1/GDManagement',
+    },
+    {
+        title: 'GDTools',
+        img: `https://raw.githubusercontent.com/GabrielDavid1/GDTools/'main'/screen.png`,
+        type: 'Front-End',
+        urlWebsite: 'https://gd-tools.vercel.app',
+        urlGithub: 'https://github.com/GabrielDavid1/GDTools',
+    },
+    {
+        title: 'Autonomous App',
+        img: 'https://github.com/GabrielDavid1/autonomous-app/blob/main/printscreen.png?raw=true',
+        type: 'Design Ux Model',
+        urlWebsite: 'https://www.figma.com/community/file/1138913953982140871',
+        urlGithub: 'https://github.com/GabrielDavid1/autonomous-app',
+    },
+    {
+        title: 'GoPizza (Developed during the course class)',
+        img: 'https://github.com/GabrielDavid1/gopizza-react-native/blob/main/screenshotA.png?raw=true',
+        type: 'Mobile',
+        urlGithub: 'https://github.com/GabrielDavid1/gopizza-react-native',
+    },   
+    {
+        title: 'Rentx (Developed during the course class)',
+        img: 'https://images-na.ssl-images-amazon.com/images/I/71rQR5ADySL.png',
+        type: 'Back-End',
+        urlGithub: 'https://github.com/GabrielDavid1/api-aluguel-carros',
+    },    
+    {
+        title: 'Shopping Cart (Developed during the course class)',
+        img: 'https://nationaltoday.com/wp-content/uploads/2021/06/Shopping-Cart-Day-1.jpg',
+        type: 'Front-End',
+        urlGithub: 'https://github.com/GabrielDavid1/carrinhodecompras',
+    },
+    {
+        title: 'Deploy Test (Developed during the course class)',
+        img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0rnjZ8OkulUa9DQlFZRJbgMEAFkE9fVyFUApLIDts3r0j9gc1K7hRXwkTiOx8Sw8-1E&usqp=CAU',
+        type: 'Front-End',
+        urlWebsite: 'https://nextvercel-ruby-six.vercel.app',
+        urlGithub: 'https://github.com/GabrielDavid1/nextvercel',
+    },
+];

@@ -31,7 +31,7 @@ export default function NextBack({ param, index, setIndex, length }: Props) {
           <rect width="48" height="48" fill="white" fillOpacity="0.01" />
           <path
             d="M19 12L31 24L19 36"
-            stroke="black"
+            stroke={index === (length-1) ? "#818181" : "#000"}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -52,7 +52,7 @@ export default function NextBack({ param, index, setIndex, length }: Props) {
           <rect width="48" height="48" fill="white" fillOpacity="0.01" />
           <path
             d="M31 36L19 24L31 12"
-            stroke="black"
+            stroke={index === 0 ? "#818181" : "#000"}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
