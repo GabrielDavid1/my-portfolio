@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import IconsBackEnd from './IconsBackEnd';
 import IconsFrontEnd from './IconsFrontEnd';
+import IconsMobile from './IconsMobile';
 
 import { 
   Container,

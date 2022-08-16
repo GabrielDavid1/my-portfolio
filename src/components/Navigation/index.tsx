@@ -19,7 +19,7 @@ export default function Navigation (){
         <ProfileImage src={require('../../assets/profile.jpg')} />
      </ProfileImageArea> 
      <Title> Gabriel David da Silva </Title>
-     <SubTitle> Desenvolvedor full stack </SubTitle>
+     <SubTitle> FullStack Developer </SubTitle>
      <ListArea>
         <ListField>
           <ListElement> Initial </ListElement>
