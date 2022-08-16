@@ -9,12 +9,14 @@ import AppContainer from './components/AppContainer';
 import Navigation from './components/Navigation';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
+import Presentation from './components/Presentation';
 
 function App() {
   return (
     <AppContainer>
       <Navigation />
       <ContentContainer>
+        <Presentation />
         <Technologies />
         <Projects />
       </ContentContainer>

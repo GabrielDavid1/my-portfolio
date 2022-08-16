@@ -49,13 +49,13 @@ export const ListField = styled.div`
     align-items: center;
 `;
 
-export const ListElement = styled.p`
+export const ListElement = styled.a`
     color:#323030;
     cursor:pointer;
     font-weight: bold;
     font-family: "Roboto";
     transition: .3s;
-
+    margin-top:8%;
     &:hover {
         color:#e4ab07;
     }
