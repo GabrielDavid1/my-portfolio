@@ -1,5 +1,6 @@
 //React
 import { useState } from 'react';
+import IconsBackEnd from './IconsBackEnd';
 import IconsFrontEnd from './IconsFrontEnd';
 
 import { 
@@ -46,7 +47,7 @@ export default function Technologies () {
         <TabElement isActive={status.database} onClick={() => handleClick('database')}> Database </TabElement> 
       </TecnologiesArea>
       <ContentArea>
-        <IconsFrontEnd />
+        <IconsBackEnd />
       </ContentArea>
    </Container>
  )
