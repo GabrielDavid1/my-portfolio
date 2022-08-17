@@ -27,6 +27,7 @@ export const Title = styled.h2`
 
 export const SubTitle = styled.p`
     color:blue;
+    text-align:center;
 `;
 
 export const ProfileImageArea = styled.div`

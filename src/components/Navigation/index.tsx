@@ -18,19 +18,17 @@ import {
 
 interface Props {
   toggleLanguage: boolean;
-  positionScroll:boolean;
   setToggleLanguage: React.Dispatch<React.SetStateAction<boolean>>;
-  setPositionScroll: React.Dispatch<React.SetStateAction<boolean>>;
+  setIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
 export default function Navigation ({
   toggleLanguage,
   setToggleLanguage,
-  positionScroll,
-  setPositionScroll,
+  setIndex,
 }:Props) {
   return (
-   <Container>  
+   <Container> 
      <ProfileImageArea>
         <ProfileImage src={require('../../assets/profile.jpg')} />
      </ProfileImageArea> 
@@ -38,10 +36,10 @@ export default function Navigation ({
      <SubTitle className="my-career"> {(toggleLanguage) ? 'Desenvolvedor Full Stack' : 'Full Stack Developer'} </SubTitle>
      <ListArea>
         <ListField className="list">
-          <ListElement href="#presentation"> {(toggleLanguage) ? translate.presentation.navTitle_BR : translate.presentation.navTitle_EN} </ListElement>
-          <ListElement href="#technologies"> {(toggleLanguage) ? translate.technologies.navTitle_BR : translate.technologies.navTitle_EN} </ListElement>
-          <ListElement href="#projects"> {(toggleLanguage) ? translate.projects.navTitle_BR : translate.projects.navTitle_EN} </ListElement>
-          <ListElement href="#improvement" onClick={() => setPositionScroll(!positionScroll)}> {(toggleLanguage) ? translate.improvement.navTitle_BR : translate.improvement.navTitle_EN} </ListElement>
+          <ListElement href="#presentation" onClick={() => setIndex(1)}> {(toggleLanguage) ? translate.presentation.navTitle_BR : translate.presentation.navTitle_EN} </ListElement>
+          <ListElement href="#technologies" onClick={() => setIndex(2)}> {(toggleLanguage) ? translate.technologies.navTitle_BR : translate.technologies.navTitle_EN} </ListElement>
+          <ListElement href="#projects" onClick={() => setIndex(3)}> {(toggleLanguage) ? translate.projects.navTitle_BR : translate.projects.navTitle_EN} </ListElement>
+          <ListElement href="#improvement" onClick={() => setIndex(4)}> {(toggleLanguage) ? translate.improvement.navTitle_BR : translate.improvement.navTitle_EN} </ListElement>
           <ListElement onClick={() => setToggleLanguage(!toggleLanguage) }>
             <Languages toggleLanguage={toggleLanguage} />  
           </ListElement>

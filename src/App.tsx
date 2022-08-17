@@ -1,5 +1,5 @@
 //React
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 //Styles
 import "./styles.css";
@@ -12,9 +12,10 @@ import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Presentation from "./components/Presentation";
 import Improvement from "./components/Improvement";
+import Marker from "./components/Marker";
 
 export default function App() {
-  const [positionScroll, setPositionScroll] = useState<boolean>(false);
+  const [index, setIndex] = useState<number>(1);
   const [toggleLanguage, setToggleLanguage] = useState<boolean>(false);
 
   useEffect(() => {
@@ -24,9 +25,8 @@ export default function App() {
   return (
     <AppContainer>
       <Navigation
+        setIndex={setIndex}
         toggleLanguage={toggleLanguage}
-        positionScroll={positionScroll}
-        setPositionScroll={setPositionScroll}
         setToggleLanguage={setToggleLanguage}
       />
       <ContentContainer>
@@ -35,8 +35,8 @@ export default function App() {
         <Projects toggleLanguage={toggleLanguage} />
         <Improvement
           toggleLanguage={toggleLanguage}
-          positionScroll={positionScroll}
         />
+        <Marker index={index} />
       </ContentContainer>
     </AppContainer>
   );

@@ -1,22 +1,15 @@
 //Utils
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import translate from "../../utils/Translate";
 
 import { Text, Title, Field, Content, SubTitle, Container } from "./styles";
 
 interface Props {
   toggleLanguage:boolean;
-  positionScroll:boolean;
 }
 
-export default function Improvement({ toggleLanguage, positionScroll }: Props) {
+export default function Improvement({ toggleLanguage }: Props) {
   const ref = useRef<HTMLDivElement>({} as HTMLDivElement);
-
-  useEffect(() => {
-    const currentScroll = ref.current.getBoundingClientRect().top + 0;
-    window.scrollTo(0, currentScroll - 500);
-  } , [positionScroll]);
-
   return (
     <Container
       id="improvement"
