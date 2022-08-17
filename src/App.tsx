@@ -14,7 +14,7 @@ import Presentation from './components/Presentation';
 import Improvement from './components/Improvement';
 
 export default function App() {
-  const [toggleLanguage, setToggleLanguage] = useState(true);
+  const [toggleLanguage, setToggleLanguage] = useState(false);
 
   return (
     <AppContainer>

@@ -1,5 +1,6 @@
 //Utils
 import translate from '../../utils/Translate';
+import Contact from '../Contact';
 
 //Components
 import Languages from '../Languages';
@@ -40,6 +41,7 @@ export default function Navigation ({
           <ListElement onClick={() => setToggleLanguage(!toggleLanguage)}>
             <Languages toggleLanguage={toggleLanguage} />  
           </ListElement>
+          <Contact />
         </ListField>
      </ListArea>
    </Container>

@@ -60,7 +60,7 @@ export const ListElement = styled.a`
     font-weight: bold;
     font-family: "Roboto";
     transition: .3s;
-    margin-top:8%;
+    margin-top:7%;
     &:hover {
         color:#e4ab07;
     }
