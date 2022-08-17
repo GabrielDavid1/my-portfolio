@@ -8,3 +8,36 @@ body {
     scroll-behavior: smooth;
 }
 
+@media (max-width: 575px) {
+    .my-name {
+        font-size: 1rem;
+    }
+    .my-career {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .list a {
+        font-size: 0.8rem;
+    }
+    .list svg {
+        width: 20%;
+    }
+    .view {
+        max-height: 15%;
+    }
+    .title-project {
+        font-size: 1.8rem;
+    }
+    #technologies h1 {
+        font-size:1.5rem;
+    }
+    .dimension {
+        height: 100%;
+    }
+    #improvement h3 {
+        font-size: 0.8rem;
+    }
+    .my-comment div p,h4 {
+        font-size: 0.65rem;
+    }
+}

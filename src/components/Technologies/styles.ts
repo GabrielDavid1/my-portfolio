@@ -20,10 +20,10 @@ export const Title = styled.h1`
 export const TechnologiesArea = styled.div`
     width:50%;
     display:flex;
-    flex-direction:row;
     justify-content:space-between;
     align-items:center;
     user-select: none;
+    flex-wrap: wrap;
 `;
 
 export const ContentArea = styled.div`

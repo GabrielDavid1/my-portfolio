@@ -6,11 +6,11 @@ export const Container = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top:5%;
+    margin-top:3%;
     gap:10px;
 `;
 
 export const SvgElement = styled.svg`
-    width:5%;
+    width:10%;
     cursor:pointer;
 `;

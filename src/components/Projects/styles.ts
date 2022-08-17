@@ -23,9 +23,9 @@ export const Body = styled.div`
 `;
 
 export const Title = styled.h1`
+    width: 50%;
     color: #2f2f2f;
     font-family: 'Bitter';
-    padding: 0px 20%;
 `;
 
 export const Description = styled.p`

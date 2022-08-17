@@ -25,7 +25,7 @@ export const ProfileTitle = styled.h1`
 export const ProfileText = styled.h3`
     color: #323030;
     font-family: 'Montserrat',sans-serif;
-    font-size: 2rem;
+    font-size: 1.1rem;
     line-height: 1.3;
     text-align: center;   
 `;

@@ -1,10 +1,8 @@
-import React from "react";
-
 import { Container } from "./styles";
 
 export default function IconsDatabase() {
   return (
-    <Container>
+    <Container className="dimension">
       <svg
         width="50px"
         height="50px"
