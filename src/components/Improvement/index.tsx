@@ -1,3 +1,6 @@
+//Utils
+import translate from '../../utils/Translate';
+
 import { 
   Text,
   Title, 
@@ -7,22 +10,26 @@ import {
   Container,
 } from './styles';
 
-export default function Improvement () {
+interface Props {
+  toggleLanguage: boolean;
+}
+
+export default function Improvement ({ toggleLanguage }:Props) {
  return (
    <Container id="improvement"> 
-    <Title> Although I have improved a lot in 2022, I see that I have points to improve to reach an excellent level as a professional, these points are: </Title>
+    <Title> {(toggleLanguage) ? translate.improvement.title_BR : translate.improvement.title_EN} </Title>
     <Content>
         <Field>
-          <SubTitle>Ux Design</SubTitle>
-          <Text>My notions in this modality were dark in 2022, it evolves a lot in this regard, but I have a lot to go through if you consider the high-level projects that are developed by excellent professionals.</Text>
+          <SubTitle>{(toggleLanguage) ? translate.improvement.content[0].title_BR : translate.improvement.content[0].title_EN}</SubTitle>
+          <Text>{(toggleLanguage) ? translate.improvement.content[0].subTitle_BR : translate.improvement.content[0].subTitle_EN}</Text>
         </Field>
         <Field>
-          <SubTitle>Search</SubTitle>
-          <Text> The scope of research involves understanding methodologies to map the best paths to problem solving. </Text>
+          <SubTitle>{(toggleLanguage) ? translate.improvement.content[1].title_BR : translate.improvement.content[1].title_EN}</SubTitle>
+          <Text>{(toggleLanguage) ? translate.improvement.content[1].subTitle_BR : translate.improvement.content[1].subTitle_EN}</Text>
         </Field>
         <Field>
-          <SubTitle>Process</SubTitle>
-          <Text>Study in depth about the processes before the code to increase the accuracy in the creation of tools.</Text>
+          <SubTitle>{(toggleLanguage) ? translate.improvement.content[2].title_BR : translate.improvement.content[2].title_EN}</SubTitle>
+          <Text>{(toggleLanguage) ? translate.improvement.content[2].subTitle_BR : translate.improvement.content[2].subTitle_EN}</Text>
         </Field>
     </Content>
    </Container>

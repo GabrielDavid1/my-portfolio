@@ -1,15 +1,21 @@
-export default [
+export default 
     {
         presentation: {
             navTitle_EN: 'Initial',
-            navTitle_PT: 'Inicial',
-            title: 'Welcome to my portfolio',
-            subtitle: `My name is gabriel, I'm 23 years old, thanks to the creator of heaven and earth I have a great passion to put all my ideas into practice. Passionate about challenges, solving problems and developing projects, I consider myself very curious because I really enjoy learning new subjects even if they have nothing to do with my area of ​​expertise.`,
+            navTitle_BR: 'Inicio',
+            title_EN: '👋😃 Welcome to my portfolio',
+            title_BR: '👋😃 Seja Bem vindo ao meu portfólio',
+            subtitle_EN: `My name is gabriel, I'm 23 years old, thanks to the creator of heaven and earth I have a great passion to put all my ideas into practice. Passionate about challenges, solving problems and developing projects, I consider myself very curious because I really enjoy learning new subjects even if they have nothing to do with my area of ​​expertise.`,
+            subtitle_BR: 'Meu nome é gabriel, tenho 23 anos, graças ao criador do céu e da terra tenho uma grande paixão de botar todas minhas ideias em prática. Fissurado em desafios, resolver problemas e desenvolver projetos, me considero muito curioso pois curto muito aprender assuntos novos mesmo que não tenha haver com minha área de atuação.',
+        },
+        technologies: {
+            navTitle_EN: 'Technologies',
+            navTitle_BR: 'Tecnologias',
         },
         projects: {
             navTitle_EN: 'Projects',
-            navTitle_PT: 'Projetos',
-            Contents: [
+            navTitle_BR: 'Projetos',
+            content: [
                 {
                     BR_description: 'Projetor de tela, com este projeto é possível manipular elementos e através de eventos alterar propriedades como cor, largura, altura, margem e etc.',
                     EN_description: 'Screen projector, with this project it is possible to manipulate elements and through events change properties such as color, width, height, margin and etc.',
@@ -59,7 +65,8 @@ export default [
         improvement: {
             navTitle_EN: 'Improvement',
             navTitle_BR: 'Melhorias',
-            title: 'Apesar de ter melhorado muito em 2022, vejo que tenho pontos a melhorar para chegar a um nível excelente como profissional, esses pontos são:',
+            title_BR: 'Apesar de ter melhorado muito em 2022, vejo que tenho pontos a melhorar para chegar a um nível excelente como profissional, esses pontos são:',
+            title_EN: 'Even though I improved a lot in 2022, I see that I have points to improve to reach a great level as a professional, these points are:',
             content: [
                 {
                     title_EN: 'UX Design',
@@ -76,10 +83,9 @@ export default [
                 {
                     title_EN: 'Process',
                     title_BR: 'Processo',
-                    subtitle_EN: 'I will study more depth about the processes before the code to increase the accuracy in the creation of tools.',
-                    subtitle_BR: 'Pretendo estudar mais a fundo sobre os processos antes do código para aumentar a precisão na criação das ferramentas.',
+                    subTitle_EN: 'I will study more depth about the processes before the code to increase the accuracy in the creation of tools.',
+                    subTitle_BR: 'Pretendo estudar mais a fundo sobre os processos antes do código para aumentar a precisão na criação das ferramentas.',
                 },
             ],
         }
     }
-];

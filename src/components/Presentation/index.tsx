@@ -1,3 +1,6 @@
+//Utils
+import translate from '../../utils/Translate';
+
 import { 
   Container, 
   ProfileArea,
@@ -5,13 +8,18 @@ import {
   ProfileTitle,
 } from './styles';
 
-export default function Presentation (){
+interface Props {
+  toggleLanguage: boolean;
+}
+
+export default function Presentation ({ toggleLanguage }:Props) {
+  
  return (
    <Container id="presentation"> 
     <ProfileArea>
-      <ProfileTitle> 👋😃 Seja Bem vindo ao meu portfólio </ProfileTitle>
+      <ProfileTitle> {(toggleLanguage) ? translate.presentation.title_BR : translate.presentation.title_EN} </ProfileTitle>
       <ProfileText>
-        Meu nome é gabriel, tenho 23 anos, graças ao criador do céu e da terra tenho uma grande paixão de botar todas minhas ideias em prática. Fissurado em desafios, resolver problemas e desenvolver projetos, me considero muito curioso pois curto muito aprender assuntos novos mesmo que não tenha haver com minha área de atuação.
+        {(toggleLanguage) ? translate.presentation.subtitle_BR : translate.presentation.subtitle_EN} 
       </ProfileText>
     </ProfileArea>
    </Container>

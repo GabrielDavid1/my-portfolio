@@ -1,4 +1,5 @@
 //React
+import { useState } from 'react';
 
 //Styles
 import './styles.css';
@@ -12,21 +13,21 @@ import Projects from './components/Projects';
 import Presentation from './components/Presentation';
 import Improvement from './components/Improvement';
 
-function App() {
+export default function App() {
+  const [toggleLanguage, setToggleLanguage] = useState(true);
+
   return (
     <AppContainer>
-      <Navigation />
+      <Navigation toggleLanguage={toggleLanguage} setToggleLanguage={setToggleLanguage} />
       <ContentContainer>
-        <Presentation />
+        <Presentation toggleLanguage={toggleLanguage} />
         <Technologies />
-        <Projects />
-        <Improvement />
+        <Projects toggleLanguage={toggleLanguage} />
+        <Improvement toggleLanguage={toggleLanguage} />
       </ContentContainer>
     </AppContainer>
   );
 }
-
-export default App;
 
 const ContentContainer = styled.div`
     width: 100%;

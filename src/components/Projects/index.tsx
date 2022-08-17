@@ -8,6 +8,7 @@ import Website from "./Icons/Website";
 
 //utils
 import myProjects from "../../utils/myProjects";
+import translate from "../../utils/Translate";
 
 import { 
    Body,
@@ -19,12 +20,18 @@ import {
    Description
 } from "./styles";
 
-export default function Projects() {
+interface Props {
+    toggleLanguage: boolean;
+}
+
+export default function Projects({ toggleLanguage }:Props) {
   const [index, setIndex] = useState(0);
   const [lastIndex, setLastIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
   
   const [opacity, setOpacity] = useState('0');
+
+  const content = translate.projects.content;
 
   useEffect(() => {
     setImageIndex((index > lastIndex) ? index-1 : index+1);
@@ -38,7 +45,7 @@ export default function Projects() {
         {" "}
         {myProjects[index].title} - {myProjects[index].type}{" "}
       </Title>
-      <Description> {myProjects[index].description} </Description>
+      <Description> {(toggleLanguage) ? content[index].BR_description : content[index].EN_description} </Description>
       <Body>
         <NextBack
           param="back"
