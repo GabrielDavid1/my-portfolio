@@ -47,7 +47,7 @@ export default [
     {
         title: 'Autonomous App',
         img: 'https://github.com/GabrielDavid1/autonomous-app/blob/main/printscreen.png?raw=true',
-        type: 'Design Ux Model',
+        type: 'Ux Design Model',
         urlWebsite: 'https://www.figma.com/community/file/1138913953982140871',
         urlGithub: 'https://github.com/GabrielDavid1/autonomous-app',
         description: 'Template project to put into practice ux design notions. I built a model for a financial management app, selling/buying products.',

@@ -25,7 +25,7 @@ export default function Navigation (){
           <ListElement href="#presentation"> Initial </ListElement>
           <ListElement href="#technologies"> Technologies </ListElement>
           <ListElement href="#projects"> Projects </ListElement>
-          <ListElement> Contacts </ListElement>
+          <ListElement href="#improvement"> Improvement </ListElement>
           <ListElement> Languages </ListElement>
         </ListField>
      </ListArea>

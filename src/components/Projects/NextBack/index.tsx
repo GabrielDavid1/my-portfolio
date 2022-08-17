@@ -1,26 +1,25 @@
 import { Container } from "./styles";
 
 interface Props {
-  param:string;
-  index:number;
+  param: string;
+  index: number;
   setIndex: React.Dispatch<React.SetStateAction<number>>;
-  length:number;
+  length: number;
 }
 
 export default function NextBack({ param, index, setIndex, length }: Props) {
-  
-  function moveIndex () {
+  function moveIndex() {
     const limit = length - 1;
     if (param === "next") {
-        (index < limit) && setIndex(index + 1);
+      index < limit && setIndex(index + 1);
     } else {
-        (index > 0) && setIndex(index - 1);
+      index > 0 && setIndex(index - 1);
     }
   }
 
   if (param === "next") {
     return (
-      <Container onClick={moveIndex}>
+      <Container isLimit={index === length - 1} onClick={moveIndex}>
         <svg
           width="48px"
           height="48px"
@@ -31,7 +30,7 @@ export default function NextBack({ param, index, setIndex, length }: Props) {
           <rect width="48" height="48" fill="white" fillOpacity="0.01" />
           <path
             d="M19 12L31 24L19 36"
-            stroke={index === (length-1) ? "#818181" : "#000"}
+            stroke={"#000"}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -41,7 +40,7 @@ export default function NextBack({ param, index, setIndex, length }: Props) {
     );
   } else {
     return (
-      <Container onClick={moveIndex}>
+      <Container isLimit={index === 0} onClick={moveIndex}>
         <svg
           width="50px"
           height="50px"
@@ -52,7 +51,7 @@ export default function NextBack({ param, index, setIndex, length }: Props) {
           <rect width="48" height="48" fill="white" fillOpacity="0.01" />
           <path
             d="M31 36L19 24L31 12"
-            stroke={index === 0 ? "#818181" : "#000"}
+            stroke={"#000"}
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"

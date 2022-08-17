@@ -10,6 +10,7 @@ import Navigation from './components/Navigation';
 import Technologies from './components/Technologies';
 import Projects from './components/Projects';
 import Presentation from './components/Presentation';
+import Improvement from './components/Improvement';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Presentation />
         <Technologies />
         <Projects />
+        <Improvement />
       </ContentContainer>
     </AppContainer>
   );

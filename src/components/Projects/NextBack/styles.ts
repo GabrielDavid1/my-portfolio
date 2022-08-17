@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.a`
+interface Props {
+    isLimit:boolean;
+}
+
+export const Container = styled.a<Props>`
     cursor:pointer;
+    opacity: ${props => props.isLimit ? '0.3' : '1'};
 `;

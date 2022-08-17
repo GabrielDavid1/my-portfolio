@@ -13,16 +13,21 @@ export const ProfileArea = styled.div`
     height:100%;
     padding: 0px 10%;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
 `;
 
-export const ProfileText = styled.h2`
-    color:#323030;
+export const ProfileTitle = styled.h1`
     font-family: 'Roboto', sans-serif;
-    font-size:2rem;
-    text-align: start;
+`;
+
+export const ProfileText = styled.h3`
+    color: #323030;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2rem;
     line-height: 1.3;
+    text-align: center;   
 `;
 
 export const ProfileImage = styled.img`
@@ -31,11 +36,4 @@ export const ProfileImage = styled.img`
     float: left;
     padding: 0px 5%;
     border-radius: 100%;    
-`;
-
-export const ImageArea = styled.img`
-    width:20%;
-    float:left;
-    padding: 2%;
-    border-radius:10%;
 `;
