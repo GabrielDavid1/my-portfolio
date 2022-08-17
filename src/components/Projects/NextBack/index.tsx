@@ -5,15 +5,17 @@ interface Props {
   index: number;
   setIndex: React.Dispatch<React.SetStateAction<number>>;
   length: number;
+  setLastIndex: React.Dispatch<React.SetStateAction<number>>;
 }
 
-export default function NextBack({ param, index, setIndex, length }: Props) {
+export default function NextBack({ param, index, setIndex, length, setLastIndex }: Props) {
   function moveIndex() {
+    setLastIndex(index);
     const limit = length - 1;
     if (param === "next") {
-      index < limit && setIndex(index + 1);
+       (index < limit) && setIndex(index + 1);
     } else {
-      index > 0 && setIndex(index - 1);
+       (index > 0) && setIndex(index - 1);
     }
   }
 

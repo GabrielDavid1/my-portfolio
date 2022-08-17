@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+interface Props {
+    opacity: string;
+}
+
 export const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -38,11 +42,14 @@ export const Details = styled.div`
     gap:10px;
 `;
 
-export const Image = styled.img`
+export const Image = styled.img<Props>`
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
-    box-shadow: 0px 0px 0px 2px;
+    box-shadow: 0px 0px 15px 0px;
+    user-select: none;
+    transition: 0.3s;
+    opacity: ${props => props.opacity};
 `;
 
 export const Link = styled.a`

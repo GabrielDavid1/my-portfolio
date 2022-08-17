@@ -7,7 +7,7 @@ import IconsMobile from './IconsMobile';
 
 import { 
   Container,
-  TecnologiesArea,
+  TechnologiesArea,
   Title,
   ContentArea,
   TabElement,
@@ -42,12 +42,12 @@ export default function Technologies () {
  return (
    <Container id="technologies"> 
       <Title>Technologies</Title>
-      <TecnologiesArea>
+      <TechnologiesArea>
         <TabElement isActive={status.frontEnd} onClick={() => handleClick('frontEnd')}> Front-End  </TabElement>
         <TabElement isActive={status.backEnd}  onClick={() => handleClick('backEnd')}> Back-End </TabElement>
         <TabElement isActive={status.mobile}   onClick={() => handleClick('mobile')}> Mobile </TabElement>
         <TabElement isActive={status.database} onClick={() => handleClick('database')}> Database </TabElement> 
-      </TecnologiesArea>
+      </TechnologiesArea>
       <ContentArea>
         {status.frontEnd && <IconsFrontEnd />}
         {status.backEnd && <IconsBackEnd />}

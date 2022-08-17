@@ -10,6 +10,12 @@ export const Container = styled.header`
     align-items: center;
     background-color: #F4F4F8;
     padding: 3% 0px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 `;
 
 export const Title = styled.h2`

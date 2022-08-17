@@ -17,12 +17,13 @@ export const Title = styled.h1`
     font-family: 'Bitter';
 `;
 
-export const TecnologiesArea = styled.div`
+export const TechnologiesArea = styled.div`
+    width:50%;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
     align-items:center;
-    width:50%;
+    user-select: none;
 `;
 
 export const ContentArea = styled.div`
