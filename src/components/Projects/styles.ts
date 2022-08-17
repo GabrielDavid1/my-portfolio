@@ -24,6 +24,12 @@ export const Title = styled.h1`
     padding: 0px 20%;
 `;
 
+export const Description = styled.p`
+    color: #2f2f2f;
+    font-style: italic;
+    padding: 0px 20%;
+`;
+
 export const Details = styled.div`
     display: flex;
     flex-direction: row;

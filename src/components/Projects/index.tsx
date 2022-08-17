@@ -9,7 +9,7 @@ import NextBack from "./NextBack";
 //utils
 import myProjects from "../../utils/myProjects";
 
-import { Body, Title, Container, Details, Image, Link } from "./styles";
+import { Body, Title, Container, Details, Image, Link, Description } from "./styles";
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
@@ -19,6 +19,7 @@ export default function Projects() {
         {" "}
         {myProjects[index].title} - {myProjects[index].type}{" "}
       </Title>
+      <Description> {myProjects[index].description} </Description>
       <Body>
         <NextBack
           param="back"
