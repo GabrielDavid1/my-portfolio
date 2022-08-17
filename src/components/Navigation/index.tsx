@@ -1,5 +1,5 @@
-//React
-import React from 'react';
+//Components
+import Languages from '../Languages';
 
 import { 
   Container, 
@@ -26,7 +26,9 @@ export default function Navigation (){
           <ListElement href="#technologies"> Technologies </ListElement>
           <ListElement href="#projects"> Projects </ListElement>
           <ListElement href="#improvement"> Improvement </ListElement>
-          <ListElement> Languages </ListElement>
+          <ListElement> 
+            <Languages />  
+          </ListElement>
         </ListField>
      </ListArea>
    </Container>
