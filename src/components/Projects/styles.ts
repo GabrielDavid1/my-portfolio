@@ -31,7 +31,7 @@ export const Title = styled.h1`
 export const Description = styled.p`
     color: #2f2f2f;
     font-style: italic;
-    padding: 0px 20%;
+    width: 50%;
 `;
 
 export const Details = styled.div`
@@ -39,7 +39,7 @@ export const Details = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:10px;
+    gap:5%;
 `;
 
 export const Image = styled.img<Props>`

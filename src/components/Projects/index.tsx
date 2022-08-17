@@ -69,24 +69,10 @@ export default function Projects({ toggleLanguage }:Props) {
       <br />
       <Details>
         {myProjects[index].urlWebsite && (
-          <Link
-            href={myProjects[index].urlWebsite}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            <Website />{" "}
-          </Link>
+            <Website url={myProjects[index].urlWebsite} />
         )}
         {myProjects[index].urlGithub && (
-          <Link
-            href={myProjects[index].urlGithub}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            <Github />{" "}
-          </Link>
+            <Github url={myProjects[index].urlGithub} />
         )}
       </Details>
     </Container>
