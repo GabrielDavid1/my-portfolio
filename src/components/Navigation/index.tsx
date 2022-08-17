@@ -1,3 +1,6 @@
+//React
+import { useState } from 'react';
+
 //Components
 import Languages from '../Languages';
 
@@ -12,7 +15,8 @@ import {
   SubTitle,
 } from './styles';
 
-export default function Navigation (){
+export default function Navigation () {
+ const [toggleLanguage, setToggleLanguage] = useState(true);
  return (
    <Container>  
      <ProfileImageArea>
@@ -26,8 +30,8 @@ export default function Navigation (){
           <ListElement href="#technologies"> Technologies </ListElement>
           <ListElement href="#projects"> Projects </ListElement>
           <ListElement href="#improvement"> Improvement </ListElement>
-          <ListElement> 
-            <Languages />  
+          <ListElement onClick={() => setToggleLanguage(!toggleLanguage)}>
+            <Languages toggleLanguage={toggleLanguage} />  
           </ListElement>
         </ListField>
      </ListArea>
