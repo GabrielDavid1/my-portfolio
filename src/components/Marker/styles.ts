@@ -16,11 +16,12 @@ export const Container = styled.div`
     gap:10px;
 `;
 
-export const Element = styled.div<Props>`
+export const Element = styled.a<Props>`
     width:0.1%; 
     background-color:${props => props.isActive ? '#d1d5d5' : '#fff'};
     border-radius:200px;
     padding:0.8%;
     border: 1px solid gray;
     transition: .5s;
+    cursor:pointer;
 `;

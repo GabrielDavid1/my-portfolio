@@ -36,7 +36,7 @@ export default function App() {
         <Improvement
           toggleLanguage={toggleLanguage}
         />
-        <Marker index={index} />
+        <Marker index={index} setIndex={setIndex} />
       </ContentContainer>
     </AppContainer>
   );
